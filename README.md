@@ -1,15 +1,13 @@
-# Desafio da Fase 02 - Bootcamp Rocketseat
+# Desafio da Fase 02 - [Launchbase Bootcamp](https://github.com/nonatodiego/bootcamp-launchbase)
 > Pequena página para aprensentar os cursos da Rocketseat com modal controlado por Js e utilizando display Grid no CSS
 
+[Demo](https://nonatodiego.github.io/desafios-modulo2/conteudos.html)
 
 ![](website.gif)
 
-
 ## Meta
-
 Diego Nonato – [@Diego](https://twitter.com/diegononatobr) – nonatodiego@hotmail.com
 
-[https://github.com/nonatodiego/desafios-modulo2](https://github.com/othonalberto/)
 
 ## Contribuir
 
