@@ -1,0 +1,220 @@
+/* Estilização
+Você tem liberdade para escolher a estilização que preferir para esse desafio, mas alguns pontos são obrigatórios:
+
+Deve ser aplicado um background
+Deve ser utilizada a fonte Roboto
+O header precisa ocupar todo o espaço lateral e superior (body sem margin)
+O header precisa ter um espaçamento interno de 30px em todas as direções
+Os links devem ter um espaçamento de 30px entre si */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: blueviolet;
+  margin: 0;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+header a {
+  margin: 30px;
+  color: #ffffff;  
+  font-weight: 700;
+}
+
+
+
+/* PÁGINA SOBRE  */
+
+/* Estilização
+Você tem liberdade para escolher a estilização que preferir para esse desafio, mas alguns pontos são obrigatórios:
+
+A imagem deve ter uma borda e um formato circular.
+Deve ser utilizada a fonte Roboto
+O nome da empresa e a imagem devem ser destacar do restante
+Os links das redes sociais devem ter alguma alteração visual quando o cursor do mouse passar por cima */
+
+
+
+.logo img {
+  height: 400px;
+  wight: 400px;
+  border-radius: 50%;
+  border: 5px solid green;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+header p {
+  text-align: center;  
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+header ul li {  
+  margin-top: 16px;
+  font-weight: 700;
+  color: yellow;
+  list-style: none;
+}
+
+header ul {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+/* cards */
+
+.cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+}
+
+.card {
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 5px solid #fff;
+  transition: ease-in 400ms;
+}
+
+.card h4 {
+  color: purple;
+  font-size: 32px;
+}
+
+.card h4:hover {
+  color: green;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.card .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+}
+
+.card .info p {
+  font-size: 24px;
+}
+
+.card .info p span {
+  color: red;
+  font-size: 20px;
+}
+
+
+
+
+
+
+/* footer */
+#links-footer a{
+  margin-top: 32px;
+  background-color: bisque;  
+  text-align: center;
+  color: #000000;
+  font-size: 24px;
+}
+
+#links-footer a:hover {
+  background-color: darkturquoise;
+}
+
+
+
+
+/* =========== MODAL =========== */
+
+.modal-overlay {
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+/* botao de fechar */
+.modal .close-modal {
+  color: #000;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* botar de expandir  */
+.modal .expandir-modal {
+  color: red;
+  position: absolute;
+  right: 8px;
+  bottom: 4px;
+  cursor: pointer;
+}
+
+
+/* =========== MODAL.ACTIVE =========== */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%
+}
+
+/* =========== MODAL.EXPANDIR =========== */
+
+/* .modal-overlay.activeGG {
+  opacity: 1;
+  visibility: visible;
+} */
+
+
+.modal-overlay.activeGG iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: ease-in 800ms;
+  /* top: 5% */
+}
+
+.modal-overlay.activeGG .modal {
+  /* background-color: #fff; */
+  width: 100%;
+  height: 95%;
+  /* margin: 5vh auto; */
+  position: relative;
+}
+
